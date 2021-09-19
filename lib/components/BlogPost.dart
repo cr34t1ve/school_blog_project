@@ -44,10 +44,16 @@ class BlogPost extends StatelessWidget {
         SizedBox(
           height: 10.0,
         ),
-        Container(
-          height: 200,
-          width: double.infinity,
-          child: Placeholder(),
+        GestureDetector(
+          //
+          // insert navigate to blog details here
+          //
+          onTap: () {},
+          child: Container(
+            height: 200,
+            width: double.infinity,
+            child: Placeholder(),
+          ),
         ),
       ],
     );
