@@ -27,6 +27,50 @@ class ProfilePage extends StatelessWidget {
                         border: Border.all(color: Colors.black)),
                   ),
                 ],
+              ),
+              SizedBox(
+                height: 50.0,
+              ),
+              Row(
+                children: [
+                  Text(
+                    'Name',
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 10.0,
+              ),
+              Row(
+                children: [
+                  Text(
+                    'User Name',
+                    style: TextStyle(fontSize: 20),
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 20.0,
+              ),
+              Row(
+                children: [
+                  Text(
+                    'Username',
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 10.0,
+              ),
+              Row(
+                children: [
+                  Text(
+                    'User Username',
+                    style: TextStyle(fontSize: 20),
+                  )
+                ],
               )
             ],
           ),
