@@ -3,6 +3,7 @@ var categories = ['Nature', 'Fashion', 'Sports'];
 List<Map<String, String>> dummyArticles = [
   {
     "image": "assets/images/image01.jpg",
+    "userProfile": "assets/images/image01.jpg",
     "authorName": "Joseph Arthur",
     "title": 'some shit',
     'category': categories[0],
@@ -11,6 +12,7 @@ List<Map<String, String>> dummyArticles = [
   },
   {
     "image": "assets/images/image02.jpg",
+    "userProfile": "assets/images/image01.jpg",
     "authorName": "Baba",
     "title": 'some shit',
     'category': categories[1],
@@ -19,6 +21,7 @@ List<Map<String, String>> dummyArticles = [
   },
   {
     "image": "assets/images/image03.jpg",
+    "userProfile": "assets/images/image01.jpg",
     "authorName": "Leo",
     "title": 'some shit',
     'category': categories[1],
@@ -27,6 +30,7 @@ List<Map<String, String>> dummyArticles = [
   },
   {
     "image": "assets/images/image04.jpg",
+    "userProfile": "assets/images/image01.jpg",
     "authorName": "Sofua Desmond",
     "title": 'some shit',
     'category': categories[2],

@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 
 class BlogPostDetails extends StatefulWidget {
-  const BlogPostDetails({Key? key}) : super(key: key);
+  const BlogPostDetails(
+      {Key? key, this.authorName, this.category, this.image, this.title})
+      : super(key: key);
+  final String? image;
+  final String? authorName;
+  final String? category;
+  final String? title;
 
   @override
   _BlogPostDetailsState createState() => _BlogPostDetailsState();
@@ -43,7 +49,10 @@ class _BlogPostDetailsState extends State<BlogPostDetails> {
                 Container(
                   height: 200,
                   width: double.infinity,
-                  child: Placeholder(),
+                  child: Image.asset(
+                    widget.image!,
+                    fit: BoxFit.fitWidth,
+                  ),
                 ),
                 SizedBox(
                   height: 15.0,
@@ -58,12 +67,16 @@ class _BlogPostDetailsState extends State<BlogPostDetails> {
                           // color: Colors.red,
                           shape: BoxShape.circle,
                           border: Border.all(color: Colors.black)),
+                          child: Image.asset(
+                        widget.image!,
+                        fit: BoxFit.fitWidth,
+                      ),
                     ),
                     SizedBox(
                       width: 10.0,
                     ),
                     Text(
-                      'Author Name',
+                      widget.authorName!,
                       style: TextStyle(fontSize: 20.0),
                     )
                   ],
@@ -75,7 +88,7 @@ class _BlogPostDetailsState extends State<BlogPostDetails> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
-                      'Article Category',
+                      widget.category!,
                       style: TextStyle(fontSize: 20),
                     )
                   ],

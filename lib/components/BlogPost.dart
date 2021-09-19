@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:school_blog_project/screens/BlogPostDetails/BlogPostDetails.dart';
 
 class BlogPost extends StatelessWidget {
-  const BlogPost({
-    Key? key,
-    required this.articleTitle,
-      required this.authorName,
-      required this.image,
-      required this.userProfile
-  }) : super(key: key);
-  final String authorName;
-  final String articleTitle;
-  final String image;
-  final String userProfile;
+  const BlogPost(
+      {Key? key,
+      this.articleTitle,
+      this.authorName,
+      this.image,
+      this.category,
+      this.userProfile})
+      : super(key: key);
+  final String? authorName;
+  final String? articleTitle;
+  final String? image;
+  final String? userProfile;
+  final String? category;
 
   @override
   Widget build(BuildContext context) {
@@ -27,13 +30,13 @@ class BlogPost extends StatelessWidget {
                   // color: Colors.red,
                   shape: BoxShape.circle,
                   border: Border.all(color: Colors.black)),
-                  child: Image.asset(userProfile),
+              child: Image.asset(userProfile!),
             ),
             SizedBox(
               width: 10.0,
             ),
             Text(
-              authorName,
+              authorName!,
               style: TextStyle(fontSize: 20.0),
             )
           ],
@@ -45,7 +48,7 @@ class BlogPost extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Text(
-              articleTitle,
+              articleTitle!,
               style: TextStyle(fontSize: 15),
             )
           ],
@@ -59,11 +62,24 @@ class BlogPost extends StatelessWidget {
           //
           // add hero animation
           //
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => BlogPostDetails(
+                          authorName: authorName,
+                          category: category,
+                          title: articleTitle,
+                          image: image,
+                        )));
+          },
           child: Container(
             height: 200,
             width: double.infinity,
-            child: Image.asset(image),
+            child: Image.asset(
+              image!,
+              fit: BoxFit.fitWidth,
+            ),
           ),
         ),
       ],
