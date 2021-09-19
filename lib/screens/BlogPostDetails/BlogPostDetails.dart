@@ -35,14 +35,21 @@ class _BlogPostDetailsState extends State<BlogPostDetails> {
           ),
         ),
         actions: [
-          Padding(
-            padding: EdgeInsets.only(right: 25.0),
-            child: Text(
-              'Save',
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 22,
-                  fontWeight: FontWeight.w600),
+          GestureDetector(
+            onTap: () {
+              //
+              // add selected post to saved
+              //
+            },
+            child: Padding(
+              padding: EdgeInsets.only(right: 25.0),
+              child: Text(
+                'Save',
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 22,
+                    fontWeight: FontWeight.w600),
+              ),
             ),
           ),
         ],
