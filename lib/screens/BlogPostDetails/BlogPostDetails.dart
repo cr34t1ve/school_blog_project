@@ -21,10 +21,17 @@ class _BlogPostDetailsState extends State<BlogPostDetails> {
         leadingWidth: 100.0,
         leading: Padding(
           padding: EdgeInsets.only(left: 25.0),
-          child: Text(
-            'Back',
-            style: TextStyle(
-                color: Colors.black, fontSize: 22, fontWeight: FontWeight.w600),
+          child: GestureDetector(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: Text(
+              'Back',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 22,
+                  fontWeight: FontWeight.w600),
+            ),
           ),
         ),
         actions: [
@@ -67,7 +74,7 @@ class _BlogPostDetailsState extends State<BlogPostDetails> {
                           // color: Colors.red,
                           shape: BoxShape.circle,
                           border: Border.all(color: Colors.black)),
-                          child: Image.asset(
+                      child: Image.asset(
                         widget.image!,
                         fit: BoxFit.fitWidth,
                       ),
