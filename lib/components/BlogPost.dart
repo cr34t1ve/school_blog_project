@@ -48,6 +48,8 @@ class BlogPost extends StatelessWidget {
           //
           // insert navigate to blog details here
           //
+          // add hero animation
+          //
           onTap: () {},
           child: Container(
             height: 200,

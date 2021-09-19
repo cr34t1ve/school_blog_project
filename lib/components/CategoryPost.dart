@@ -45,17 +45,6 @@ class CategoryPage extends StatelessWidget {
               SizedBox(
                 height: 10.0,
               ),
-              // ListView.separated(
-              //     shrinkWrap: true,
-              //     itemCount: 3,
-              //     separatorBuilder: (context, index) {
-              //       return SizedBox(
-              //         height: 10.0,
-              //       );
-              //     },
-              //     itemBuilder: (context, index) {
-              //       return BlogPost();
-              //     }),
             ],
           )
         ],
