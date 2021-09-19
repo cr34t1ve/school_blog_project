@@ -1,18 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:school_blog_project/screens/HomePage/homepage.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Home(),
+    home: HomePage(),
+    theme: ThemeData(scaffoldBackgroundColor: Colors.white),
   ));
 }
 
-class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-    );
-  }
-}
