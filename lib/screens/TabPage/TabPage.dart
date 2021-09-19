@@ -38,13 +38,13 @@ class _TabPageState extends State<TabPage> {
         unselectedLabelStyle: TextStyle(
           fontFamily: 'Manrope',
           fontWeight: FontWeight.w600,
-          fontSize: 10.0,
+          fontSize: 12.0,
           // color: Colors.white
         ),
         selectedLabelStyle: TextStyle(
           fontFamily: 'Manrope',
           fontWeight: FontWeight.w600,
-          fontSize: 10.0,
+          fontSize: 12.0,
           // color: Colors.white
         ),
         currentIndex: _currentIndex,
