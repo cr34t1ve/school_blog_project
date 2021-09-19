@@ -9,4 +9,4 @@ Language: Dart
 Current Build Mode: Debug
 Current Build Point: Beta
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Yaktocat](https://flic.kr/p/2mseMix)
