@@ -27,17 +27,20 @@ class _SavedPostsState extends State<SavedPosts> {
                       Container(
                         height: 80.0,
                         width: 80.0,
-                        child: Placeholder(),
+                        child: Image.asset(
+                          'assets/images/70.jpg',
+                          fit: BoxFit.fill,
+                        ),
                       ),
                       SizedBox(
                         height: 10.0,
                       ),
                       Text(
-                        'Author Name',
-                        style: TextStyle(fontSize: 18),
+                        'Lillie Jensen',
+                        style: TextStyle(fontSize: 22),
                       ),
                       Text(
-                        'Author Position',
+                        'Editor at The New York Times',
                         style: TextStyle(fontSize: 18),
                       )
                     ],
