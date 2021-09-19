@@ -4,7 +4,10 @@ import 'package:school_blog_project/screens/HomePage/homepage.dart';
 void main() {
   runApp(MaterialApp(
     home: HomePage(),
-    theme: ThemeData(scaffoldBackgroundColor: Colors.white),
+    theme: ThemeData(
+        appBarTheme: AppBarTheme(backgroundColor: Colors.white, elevation: 0.0),
+        fontFamily: 'Manrope',
+        scaffoldBackgroundColor: Colors.white),
   ));
 }
 
