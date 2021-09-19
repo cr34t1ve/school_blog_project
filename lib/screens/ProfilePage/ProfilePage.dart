@@ -23,6 +23,9 @@ class ProfilePage extends StatelessWidget {
                     height: 110.0,
                     width: 110.0,
                     decoration: BoxDecoration(
+                      image: DecorationImage(
+                            image: ExactAssetImage(
+                                'assets/images/dummy profile.jpeg')),
                         shape: BoxShape.circle,
                         border: Border.all(color: Colors.black)),
                   ),
@@ -45,18 +48,18 @@ class ProfilePage extends StatelessWidget {
               Row(
                 children: [
                   Text(
-                    'User Name',
+                    'HCI Group 22',
                     style: TextStyle(fontSize: 20),
                   )
                 ],
               ),
               SizedBox(
-                height: 20.0,
+                height: 30.0,
               ),
               Row(
                 children: [
                   Text(
-                    'Username',
+                    'TheWritersHub',
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                   )
                 ],

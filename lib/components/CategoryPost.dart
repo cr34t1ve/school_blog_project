@@ -19,14 +19,18 @@ class CategoryPage extends StatelessWidget {
             child: ListView.separated(
                 shrinkWrap: true,
                 scrollDirection: Axis.horizontal,
-                itemCount: 3,
+                itemCount: dummyArticles.length,
                 separatorBuilder: (context, index) {
                   return SizedBox(
                     width: 10.0,
                   );
                 },
                 itemBuilder: (context, index) {
-                  return VideoItem();
+                  return VideoItem(
+                    image: dummyArticles[index]['image'],
+                    title: dummyArticles[index]['title'],
+                    time: '2m',
+                  );
                 }),
           ),
           SizedBox(
