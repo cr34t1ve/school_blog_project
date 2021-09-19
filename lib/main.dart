@@ -3,10 +3,11 @@ import 'package:school_blog_project/screens/BlogPostDetails/BlogPostDetails.dart
 import 'package:school_blog_project/screens/HomePage/homepage.dart';
 import 'package:school_blog_project/screens/ProfilePage/ProfilePage.dart';
 import 'package:school_blog_project/screens/SavedPosts/SavedPosts.dart';
+import 'package:school_blog_project/screens/SearchScreen/SearchScreen.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: ProfilePage(),
+    home: SearchScreen(),
     theme: ThemeData(
         appBarTheme: AppBarTheme(backgroundColor: Colors.white, elevation: 0.0),
         fontFamily: 'Manrope',
