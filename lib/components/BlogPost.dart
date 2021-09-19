@@ -3,7 +3,15 @@ import 'package:flutter/material.dart';
 class BlogPost extends StatelessWidget {
   const BlogPost({
     Key? key,
+    required this.articleTitle,
+      required this.authorName,
+      required this.image,
+      required this.userProfile
   }) : super(key: key);
+  final String authorName;
+  final String articleTitle;
+  final String image;
+  final String userProfile;
 
   @override
   Widget build(BuildContext context) {
@@ -19,12 +27,13 @@ class BlogPost extends StatelessWidget {
                   // color: Colors.red,
                   shape: BoxShape.circle,
                   border: Border.all(color: Colors.black)),
+                  child: Image.asset(userProfile),
             ),
             SizedBox(
               width: 10.0,
             ),
             Text(
-              'Author Name',
+              authorName,
               style: TextStyle(fontSize: 20.0),
             )
           ],
@@ -36,7 +45,7 @@ class BlogPost extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Text(
-              'Article Title',
+              articleTitle,
               style: TextStyle(fontSize: 15),
             )
           ],
@@ -54,7 +63,7 @@ class BlogPost extends StatelessWidget {
           child: Container(
             height: 200,
             width: double.infinity,
-            child: Placeholder(),
+            child: Image.asset(image),
           ),
         ),
       ],
