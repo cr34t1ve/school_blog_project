@@ -37,4 +37,34 @@ List<Map<String, String>> dummyArticles = [
     "subtitle":
         "With simple but secure accounts and transactions you can trust\n "
   },
+  //
+  //
+  //
+  {
+    "image": "assets/images/image05.jpg",
+    "userProfile": "assets/images/image01.jpg",
+    "authorName": "Sofua Desmond",
+    "title": 'Sample title',
+    'category': categories[1],
+    "subtitle":
+        "With simple but secure accounts and transactions you can trust\n "
+  },
+  {
+    "image": "assets/images/image06.jpg",
+    "userProfile": "assets/images/image01.jpg",
+    "authorName": "Leo",
+    "title": 'Sample title',
+    'category': categories[0],
+    "subtitle":
+        "With simple but secure accounts and transactions you can trust\n "
+  },
+  {
+    "image": "assets/images/image07.jpg",
+    "userProfile": "assets/images/image01.jpg",
+    "authorName": "Sofua Desmond",
+    "title": 'Sample title',
+    'category': categories[1],
+    "subtitle":
+        "With simple but secure accounts and transactions you can trust\n "
+  },
 ];

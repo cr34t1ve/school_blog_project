@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:school_blog_project/enum/constants.dart';
 
 class SavedPosts extends StatefulWidget {
   const SavedPosts({Key? key}) : super(key: key);
@@ -55,22 +56,25 @@ class _SavedPostsState extends State<SavedPosts> {
                   itemBuilder: (context, index) {
                     return ListTile(
                       title: Text(
-                        'Article Title',
+                        dummyArticles[index]['title']!,
                       ),
-                      subtitle: Text('Time to read'),
+                      subtitle: Text('2m'),
                       leading: Container(
                         height: 60.0,
                         width: 60.0,
                         decoration: BoxDecoration(
+                          image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: ExactAssetImage(
+                                    dummyArticles[index]['image']!)),
                             border: Border.all(color: Colors.black)),
-                        child: Placeholder(),
                       ),
                     );
                   },
                   separatorBuilder: (context, index) {
                     return Divider();
                   },
-                  itemCount: 8)
+                  itemCount: dummyArticles.length)
             ],
           ),
         ),
